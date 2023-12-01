@@ -258,6 +258,7 @@ class WebKB(InMemoryDataset):
 
         with open(self.raw_paths[1], 'r') as f:
             data = f.read().split('\n')[1:-1]
+            print(data) #debug
             data = [[int(v) for v in r.split('\t')] for r in data]
             edge_index = torch.tensor(data, dtype=torch.long).t().contiguous()
             edge_index = to_undirected(edge_index)

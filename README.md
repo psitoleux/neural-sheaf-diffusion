@@ -1,7 +1,7 @@
 # Neural Sheaf Diffusion
 
 This repository contains code allowing to run experiments from the
-**[Neural Sheaf Diffusion: A Topological Perspective on Heterophily and Oversmoothing in GNNs](https://arxiv.org/abs/2202.04579) (NeurIPS 2022)** paper on the filtered versions of datasets squirrel and chameleon, for the project in the course "Geometric Data Analysis" by Paul Sitoleux and Ethan XX.
+**[Neural Sheaf Diffusion: A Topological Perspective on Heterophily and Oversmoothing in GNNs](https://arxiv.org/abs/2202.04579) (NeurIPS 2022)** paper on the filtered versions of datasets squirrel and chameleon, for the project in the course "Geometric Data Analysis" by Paul Sitoleux and Ethan XX. Some of this presentation is reproduced from the original repository, we add some instructions for our particular application.
 
 
 ## Getting started
@@ -34,11 +34,13 @@ Scripts for the other heterophilic datasets are also provided in `exp/scripts`.
 
 If you want to replace the datasets 'chameleon' and 'squirrel' by their filtered versions, you should first run
 
-'''commandline
+```commandline
 python generate_filtered_chameleon_squirrel.py
-'''
+```
 
 then run the experiments as described above.
+
+Warning: for some reason (not clear), if you want to run experiments on the unfiltered datasets before running them on the filtered dataset, you have to re-create an environment before, the experiment fails otherwise. 
 
 
 

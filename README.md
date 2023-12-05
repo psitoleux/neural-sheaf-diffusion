@@ -28,17 +28,6 @@ Then, for instance, to run the training procedure on `texas`, simply run the exa
 sh ./exp/scripts/run_texas.sh
 ```
 
-To run the experiments using `wandb`, first create a [Weights & Biases account](https://wandb.ai/site). Then run the following
-commands to log in and follow the displayed instructions:
-```bash
-wandb online
-wandb login
-```
-Then, you can run the example training procedure on `texas` via:
-```bash
-export ENTITY=<WANDB_ACCOUNT_ID>
-sh ./exp/scripts/run_texas.sh
-```
 Scripts for the other heterophilic datasets are also provided in `exp/scripts`. 
 
 ### Filtered datasets
